@@ -17,6 +17,9 @@ export class PostgresCountriesRepository implements ICountiesRepository {
 
   async findAll(skip: number, take: number): Promise<IPaginatedResponse<Country[]>> {
     const data = await this.dbClient.countries.findMany({
+      orderBy: {
+        country_name: 'asc',
+      },
       skip,
       take
     });
