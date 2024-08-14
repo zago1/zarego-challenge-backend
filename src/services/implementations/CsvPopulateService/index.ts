@@ -20,6 +20,8 @@ export class CsvPopulateService implements IPopulateService {
         modesty: parseFloat(row[4]),
         charisma: parseFloat(row[5]),
         decisive: parseFloat(row[7]),
+        diplomatic: parseFloat(row[8]),
+        face_saver: parseFloat(row[9]),
         country_cluster: row[row.length - 1],
         date_added: new Date(),
       });

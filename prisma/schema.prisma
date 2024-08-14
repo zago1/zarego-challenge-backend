@@ -22,6 +22,8 @@ model Countries {
   charisma Float
   decisive Float
   modesty Float
+  diplomatic Float @default(0)
+  face_saver Float @default(0)
   date_added DateTime
 
   @@map("countries")
